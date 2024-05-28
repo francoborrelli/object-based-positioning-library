@@ -22,6 +22,8 @@ This library is presented as a concrete implementation aimed at enabling a proof
 
 ## BaseObjectBasedPositioning class
 
+
+
 <details open>
 <summary><h3>Public Methods</h3></summary>
 
@@ -48,6 +50,10 @@ This library is presented as a concrete implementation aimed at enabling a proof
 </details>
 
 ## FirebaseObjectBasedPositioning class
+
+`FirebaseObjectBasedPositioning` is a class that extends the functionality of `BaseObjectBasedPositioning` to provide an indoor positioning mechanism based on storing and managing data in Firebase. This class allows you to register and unregister objects in a Firestore database, retrieve registered objects, and get nearby objects based on the user's current position.
+
+
 <details open>
 <summary><h3>Public Methods</h3></summary>
 
