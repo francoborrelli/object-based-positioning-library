@@ -20,12 +20,10 @@ This library is presented as a concrete implementation aimed at enabling a proof
 
 ## 📖 Documentation
 
-
----
-
 ### 🔧 Public Methods
 
-### BaseObjectBasedPositioning class
+<details open>
+<summary><h3>BaseObjectBasedPositioning class</h3></summary>
 
 | Method Name                        | Description                                                                 | Parameters                                     | Returns                                          |
 |------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -47,8 +45,10 @@ This library is presented as a concrete implementation aimed at enabling a proof
 | `onUnregisterObject`               | Unregister an object from the database. (Abstract method, to be implemented)| `id: string`                                   | `Promise<void>`                                  |
 | `getRegisteredObjects`             | Get all registered objects. (Abstract method, to be implemented)            | `conditions: any`                              | `Promise<any>`                                   |
 | `getNearbyObjects`                 | Get all nearby objects. (Abstract method, to be implemented)                | None                                           | `Promise<any>`                                   |
+</details>
 
-#### FirebaseObjectBasedPositioning class
+<details open>
+<summary><h3>FirebaseObjectBasedPositioning class</h3></summary>
 
 | Method Name              | Description                                                              | Parameters                                                                                              | Returns                                         |
 |--------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -58,6 +58,7 @@ This library is presented as a concrete implementation aimed at enabling a proof
 | `onUnregisterObject`     | Delete an object in the database by its ID.                               | `id: string`                                                                                            | `Promise<void>`                                 |
 | `getRegisteredObjects`   | Get all registered objects in Firebase based on conditions.               | `conditions: QueryConstraint \| QueryNonFilterConstraint`                                                | `Promise<FirebaseObject[]>`                     |
 | `getNearbyObjects`       | Get all nearby objects based on the current position and configured limits.| None                                                                                                    | `Promise<FirebaseObject[]>`                     |
+</details>
 
 
 ### 🛠️ Example Usage
