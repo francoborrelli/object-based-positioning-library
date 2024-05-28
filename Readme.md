@@ -14,16 +14,16 @@ This library is presented as a concrete implementation aimed at enabling a proof
 
 1. 🌟 [Introduction](#introduction)
 2. 📖 [Documentation](#documentation)
-   - 🔧 [Public Methods](#public-methods)
-   - 🛠️ [Example Usage](#example-usage)
+   - 🔧 [BaseObjectBasedPositioning class](#public-methods)
+   - 🛠️ [FirebaseObjectBasedPositioning class](#example-usage)
 
 
 ## 📖 Documentation
 
-### 🔧 Public Methods
+## BaseObjectBasedPositioning class
 
 <details open>
-<summary><h3>BaseObjectBasedPositioning class</h3></summary>
+<summary><h3>Public Methods</h3></summary>
 
 | Method Name                        | Description                                                                 | Parameters                                     | Returns                                          |
 |------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -47,8 +47,9 @@ This library is presented as a concrete implementation aimed at enabling a proof
 | `getNearbyObjects`                 | Get all nearby objects. (Abstract method, to be implemented)                | None                                           | `Promise<any>`                                   |
 </details>
 
+## FirebaseObjectBasedPositioning class
 <details open>
-<summary><h3>FirebaseObjectBasedPositioning class</h3></summary>
+<summary><h3>Public Methods</h3></summary>
 
 | Method Name              | Description                                                              | Parameters                                                                                              | Returns                                         |
 |--------------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -61,7 +62,9 @@ This library is presented as a concrete implementation aimed at enabling a proof
 </details>
 
 
-### 🛠️ Example Usage
+<details open>
+<summary><h3>Example Usage</h3></summary>
+
 
 ### Create an instance
 
@@ -154,4 +157,5 @@ positioning.getNearbyObjects()
     console.error('Error getting nearby objects:', error);
   });
 ```
+</details>
 
