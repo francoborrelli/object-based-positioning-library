@@ -10,19 +10,24 @@
 
 This library is presented as a concrete implementation aimed at enabling a proof of concept. The library allows for positioning users in indoor spaces using various object recognition models. To achieve positioning, there are two stages involved. In the first stage, the user needs to use their phone's camera to scan the environment, recording different objects present in the space. These "points of interest" can then be accessed in the second stage, providing contextual information or services to other users.
 
+## 🔑 Key Features
+🟢 Real-time object detection and classification.
+📍 Indoor positioning using object recognition models.
+⚙️ Easy integration with React Native and Expo.
+🔧 Configurable detection settings and model options.
+
 ## 📚 Table of Contents
 
-1. 🌟 [Introduction](#introduction)
-2. 📖 [Documentation](#documentation)
-   - 🔧 [BaseObjectBasedPositioning class](#public-methods)
-   - 🛠️ [FirebaseObjectBasedPositioning class](#example-usage)
+1. 🌟 [Introduction](#-introduction)
+2. 🔑 [Key Features](#-key-features)
+3. 📖 [Documentation](#-documentation)
+   - 🔧 [BaseObjectBasedPositioning class](#baseObjectBasedPositioning-class)
+   - 🛠️ [FirebaseObjectBasedPositioning class](#firebaseObjectBasedPositioning-class)
 
 
 ## 📖 Documentation
 
-## BaseObjectBasedPositioning class
-
-
+### BaseObjectBasedPositioning class
 
 <details open>
 <summary><h3>Public Methods</h3></summary>
@@ -49,7 +54,7 @@ This library is presented as a concrete implementation aimed at enabling a proof
 | `getNearbyObjects`                 | Get all nearby objects. (Abstract method, to be implemented)                | None                                           | `Promise<any>`                                   |
 </details>
 
-## FirebaseObjectBasedPositioning class
+### FirebaseObjectBasedPositioning class
 
 `FirebaseObjectBasedPositioning` is a class that extends the functionality of `BaseObjectBasedPositioning` to provide an indoor positioning mechanism based on storing and managing data in Firebase. This class allows you to register and unregister objects in a Firestore database, retrieve registered objects, and get nearby objects based on the user's current position.
 
