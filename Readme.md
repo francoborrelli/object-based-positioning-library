@@ -165,3 +165,38 @@ positioning.getNearbyObjects()
 ```
 </details>
 
+### Get React Component
+
+>[!NOTE]
+>More information about these Components can be found [here](https://github.com/francoborrelli/object-based-positioning-library/blob/master/docs/react-components.md#-detectioncocossdcamera-component).
+
+The documentation presents a collection of React components available for real-time object detection and classification using pre-trained TensorFlow.js models. These components are designed to seamlessly integrate into React Native applications and leverage the device's camera capabilities to detect and classify a variety of objects. Each component provides a straightforward interface for configuring and receiving detection or classification results. They allow the phone's camera to view the environment and send images for processing by the object recognition model, making it easy to integrate into existing projects and customize according to specific application needs.
+
+
+
+```js
+
+// Change the current object detection model
+positioning.setCurrentModel('mobilenet v2');
+
+// Get Camera Component for Mobilenet v2
+const Component = positioning.getReactCameraComponent();
+
+const App = () => {
+  const handleNewResults = (results) => {
+       console.log('New detection results:', results);
+       // Your logic here
+     };
+
+  return (
+    <Component
+      minPrecision={25}
+      numberOfFrames={150}
+      onNewResults={handleNewResults}
+      availableObjects={['person', 'car']}
+    />
+  );
+}
+
+```
+
