@@ -141,23 +141,7 @@ export class FirebaseObjectBasedPositioning extends BaseObjectBasedPositioning {
     const maxHeadingAllowed = this.getMaxHeadingToDetectObjects();
     const maxDistanceAllowed = this.getMaxDistanceToDetectObjects();
 
-    const q = query(
-      this.collection
-      // and(
-      //   and(
-      //     where('position.latitude', '>=', currentPosition.position.latitude - maxDistanceAllowed),
-      //     where('position.latitude', '<=', currentPosition.position.latitude - maxDistanceAllowed)
-      //   ),
-      //   and(
-      //     where(
-      //       'position.longitude',
-      //       '>=',
-      //       currentPosition.position.longitude - maxDistanceAllowed
-      //     ),
-      //     where('position.longitude', '<=', currentPosition.position.longitude - maxDistanceAllowed)
-      //   )
-      // )
-    );
+    const q = query(this.collection);
 
     const querySnapshot = await getDocs(q);
     const data = querySnapshot.docs.map((value) => value.data());
