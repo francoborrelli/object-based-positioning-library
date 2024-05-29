@@ -2,6 +2,8 @@
 
 The documentation presents a collection of React components available for real-time object detection and classification using pre-trained TensorFlow.js models. These components are designed to seamlessly integrate into React Native applications and leverage the device's camera capabilities to detect and classify a variety of objects. Each component provides a straightforward interface for configuration and receiving detection or classification results, making it easy to integrate into existing projects and customize according to specific application needs.
 
+All components extend the properties defined for [`cameraWithTensors`](https://js.tensorflow.org/api_react_native/0.2.1/#cameraWithTensors) from TensorFlow.js and the [`Expo Camera`](https://docs.expo.dev/versions/latest/sdk/camera/) Component. This ensures compatibility and flexibility in integrating advanced camera functionalities and TensorFlow.js processing within your Expo application.
+
 <details> 
 <summary><h2>📷 DetectionCocoSSDCamera Component</h2></summary>
 
