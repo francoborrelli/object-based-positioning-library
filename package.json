@@ -1,19 +1,33 @@
 {
   "name": "object-based-positioning",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "This library is presented as a concrete implementation aimed at enabling a proof of concept. The library allows for positioning users in indoor spaces using various object recognition models.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "git repository": "https://github.com/francoborrelli/object-based-positioning-library",
+  "keywords": [
+    "expo",
+    "react-native",
+    "object-detection",
+    "positioning",
+    "indoor",
+    "tensorflowjs",
+    "firebase"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Franco Borrelli",
+  "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.17.4",
     "@types/node": "^20.12.12",
     "@types/react": "^18.3.3",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
