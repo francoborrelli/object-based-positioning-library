@@ -5,24 +5,37 @@
 > [!NOTE]
 > **Summary:** Prototype mechanism for achieving user positioning in indoor spaces using object recognition and detection models. This library works exclusively with **React Native** and **Expo**. A concrete implementation using **Firebase** to store data is presented, although other mechanisms could be used.
 
+## 📚 Table of Contents
+
+1. 🌟 [Introduction](#-introduction)
+2. 🔑 [Key Features](#-key-features)
+3. 📥 [Installation](#-installation)
+4. 📖 [Documentation](#-documentation)
+   - 🔧 [BaseObjectBasedPositioning class](#baseObjectBasedPositioning-class)
+   - 🛠️ [FirebaseObjectBasedPositioning class](#firebaseObjectBasedPositioning-class)
+
 
 ## 🌟 Introduction
 
 This library is presented as a concrete implementation aimed at enabling a proof of concept. The library allows for positioning users in indoor spaces using various object recognition models. To achieve positioning, there are two stages involved. In the first stage, the user needs to use their phone's camera to scan the environment, recording different objects present in the space. These "points of interest" can then be accessed in the second stage, providing contextual information or services to other users.
 
+## 📥 Installation
+
+```sh
+
+npm i object-based-positioning
+
+```
+
 ## 🔑 Key Features
+
 🟢 Real-time object detection and classification.
+
 📍 Indoor positioning using object recognition models.
+
 ⚙️ Easy integration with React Native and Expo.
+
 🔧 Configurable detection settings and model options.
-
-## 📚 Table of Contents
-
-1. 🌟 [Introduction](#-introduction)
-2. 🔑 [Key Features](#-key-features)
-3. 📖 [Documentation](#-documentation)
-   - 🔧 [BaseObjectBasedPositioning class](#baseObjectBasedPositioning-class)
-   - 🛠️ [FirebaseObjectBasedPositioning class](#firebaseObjectBasedPositioning-class)
 
 
 ## 📖 Documentation
