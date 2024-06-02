@@ -2,7 +2,8 @@
 
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-> [!NOTE] > **Summary:** Object-based-Positioning is a library that aims to explore an alternative for indoor positioning using the concept of Positioned Objects. The library works as a proof of concept and allows for the use of various object recognition and detection models in combination with sensor information and algorithms to position users. This library works exclusively with **React Native** and **Expo**. A concrete implementation using **Firebase** to store data is presented, although other mechanisms could be used.
+> [!NOTE]
+> **Summary:** Object-based-Positioning is a library that aims to explore an alternative for indoor positioning using the concept of Positioned Objects. The library works as a proof of concept and allows for the use of various object recognition and detection models in combination with sensor information and algorithms to position users. This library works exclusively with **React Native** and **Expo**. A concrete implementation using **Firebase** to store data is presented, although other mechanisms could be used.
 
 ## 📚 Table of Contents
 
